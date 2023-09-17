@@ -7,8 +7,8 @@ module.exports = {
       "Users",
       [
         {
-          nickname: "John Doe",
-          password: false,
+          nickname: "楠木",
+          password: "$10$rOzfJmf9nnfOu1GYcPwUBurIzVePvZUda.9MOPQ0N/r9yzBN1/SWi",
           email: "157884200@qq.com",
           openid: "",
           createdAt: new Date(),

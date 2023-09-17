@@ -1,5 +1,4 @@
 const { Forbidden } = require("../core/http-exception");
-const { security } = require("../config/config");
 const jwt = require("jsonwebtoken");
 
 // 校验token
@@ -10,7 +9,7 @@ const validateToken = async (ctx, next) => {
   }
 
   try {
-    let user = jwt.verify(userToken, security.secretKey);
+    let user = jwt.verify(userToken, process.env.Secret_Key);
 
     ctx.auth = {
       uid: user.uid,
